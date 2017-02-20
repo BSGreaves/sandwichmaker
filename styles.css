@@ -1,9 +1,10 @@
 body {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	width: 80%;
+	width: 90%;
 	margin: 20px auto;
 	border: 3px solid darkblue;
 	padding: 10px;
+	color: #011e4c;
 }
 
 main {
@@ -13,8 +14,35 @@ main {
 }
 
 .flexy {
-	align-self: flex-start;
 	padding: 10px;
-	margin: 0 auto;
+	margin: auto;
 }
 
+.flexy-checkbox {
+	padding: 10px;
+}
+
+.headers {
+
+}
+
+.checkboxcontainer {
+	padding: 0 10px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+h3 {
+	margin: 5px;
+}
+
+#finalPrice {
+	background-color: #011e4c;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 0;
+	text-align: center;
+}

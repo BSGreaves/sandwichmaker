@@ -1,19 +1,16 @@
-var button = document.getElementById("button");
-var checkBoxes = document.querySelectorAll("[id^=opt]");
-var selectedAddons = [];
+var SandwichMaker = (function() {
+	var finalPrice = 0;
+	var finalPriceDiv = document.getElementById("finalPrice");
 
-
-button.addEventListener("click", function(){
-	determineSelectedAddons(checkBoxes);
-});
-
-function determineSelectedAddons (nodeList) {
-	for (var i = 0; i < nodeList.length ; i++) {
-		if (nodeList[i].checked === true) {
-			selectedAddons.push(nodeList[i])
-		}
+	return {
+		adjustPrice: function(math, price) { //this function is called by the IIFE augmentors
+			if (math === "add") {
+				finalPrice += price;
+			}
+			if (math === "subtract") {
+				finalPrice -= price;
+			}
+			finalPriceDiv.innerHTML = "$" + finalPrice.toFixed(2);
+		},
 	}
-	console.log(selectedAddons);
-};
-
-// function calculatePrice ()
+})();

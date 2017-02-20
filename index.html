@@ -14,44 +14,54 @@
 		    	<h1>Sandwich Maker</h1><br>
 		    	<h3>Choose your options below!</h3>
 	    	</div>
+	    	<div class="flexy checkboxcontainer">
+		    	<div class="flexy-checkbox">
+		    		<h3>Bread</h3>
+		    		<input type="checkbox" name="bread" id="wheat" class="option">Wheat - $1.50<br>
+		    		<input type="checkbox" name="bread" id="white" class="option">White - $1.50<br>
+		    		<input type="checkbox" name="bread" id="sourdough" class="option">Sourdough - $2.00<br>
+		    		<input type="checkbox" name="bread" id="glutenFree" class="option">Gluten-free - $2.50<br>
+		    	</div>
+		    	<div class="flexy-checkbox">
+		    		<h3>Meat</h3>
+		    		<input type="checkbox" name="meat" id="ham" class="option">Ham - $1.00<br>
+		    		<input type="checkbox" name="meat" id="chicken" class="option">Chicken - $1.00<br>
+		    		<input type="checkbox" name="meat" id="turkey" class="option">Turkey - $1.00<br>
+		    		<input type="checkbox" name="meat" id="roastBeef" class="option">Roast Beef - $1.50<br>
+		    	</div>
+		    	<div class="flexy-checkbox">
+		    		<h3>Cheese</h3>
+		    		<input type="checkbox" name="cheese" id="gouda" class="option">Gouda - $1.00<br>
+		    		<input type="checkbox" name="cheese" id="swiss" class="option">Swiss - $1.00<br>
+		    		<input type="checkbox" name="cheese" id="whiteCheddar" class="option">White Cheddar - $1.25<br>
+		    		<input type="checkbox" name="cheese" id="american" class="option">American - $0.75<br>
+		    	</div>
+		    	<div class="flexy-checkbox">
+		    		<h3>Veggies</h3>
+		    		<input type="checkbox" name="veggie" id="tomato" class="option">Tomato - $0.50<br>
+		    		<input type="checkbox" name="veggie" id="lettuce" class="option">Lettuce - $0.50<br>
+		    		<input type="checkbox" name="veggie" id="bellPepper" class="option">Bell Pepper - $0.50<br>
+		    		<input type="checkbox" name="veggie" id="onion" class="option">Onion - $0.50<br>
+		    	</div>
+		    	<div class="flexy-checkbox">
+		    		<h3>Condiments</h3>
+		    		<input type="checkbox" name="condiment" id="mayo" class="option">Mayo - $0.25<br>
+		    		<input type="checkbox" name="condiment" id="mustard" class="option">Mustard  - $0.25<br>
+		    		<input type="checkbox" name="condiment" id="hotSauce" class="option">Hot Sauce - $0.25<br>
+		    		<input type="checkbox" name="condiment" id="ranch" class="option">Ranch - $0.25<br>
+		    	</div>
+		    </div>
 	    	<div class="flexy">
-	    		<h3>Bread</h3>
-	    		<input type="checkbox" name="bread" id="optWheat" >Wheat<br>
-	    		<input type="checkbox" name="bread" id="optWhite">White<br>
-	    		<input type="checkbox" name="bread" id="optSourdough">Sourdough<br>
-	    		<input type="checkbox" name="bread" id="optGlutenfree">Gluten-free<br>
+	    		<h3>Your sandwich will cost you:</h3><br>
+	    		<h3 id="finalPrice">$0.00</h3>
 	    	</div>
-	    	<div class="flexy">
-	    		<h3>Meat</h3>
-	    		<input type="checkbox" name="meat" id="optHam">Ham<br>
-	    		<input type="checkbox" name="meat" id="optChicken">Chicken<br>
-	    		<input type="checkbox" name="meat" id="optTurkey">Turkey<br>
-	    		<input type="checkbox" name="meat" id="optRoastbeef">Roast Beef<br>
-	    	</div>
-	    	<div class="flexy">
-	    		<h3>Cheese</h3>
-	    		<input type="checkbox" name="cheese" id="optGouda">Gouda<br>
-	    		<input type="checkbox" name="cheese" id="optSwiss">Swiss<br>
-	    		<input type="checkbox" name="cheese" id="optWhitecheddar">White Cheddar<br>
-	    		<input type="checkbox" name="cheese" id="optAmerican">American<br>
-	    	</div>
-	    	<div class="flexy">
-	    		<h3>Veggies</h3>
-	    		<input type="checkbox" name="veggies" id="optTomato">Tomato<br>
-	    		<input type="checkbox" name="veggies" id="optLettuce">Lettuce<br>
-	    		<input type="checkbox" name="veggies" id="optBellpepper">Bell Pepper<br>
-	    		<input type="checkbox" name="veggies" id="optOnion">Onion<br>
-	    	</div>
-	    	<div class="flexy">
-	    		<h3>Condiments</h3>
-	    		<input type="checkbox" name="condiments" id="optMayo">Mayo<br>
-	    		<input type="checkbox" name="condiments" id="optMustard">Mustard<br>
-	    		<input type="checkbox" name="condiments" id="optHotsauce">Hot Sauce<br>
-	    		<input type="checkbox" name="condiments" id="optRanch">Ranch<br>
-	    	</div>
-	    	<div>
-	    		<input type="button" value="Go" id="button">
-	    	</div>
-        <script src="main.js"></script>
+    	</main>
+    	<script src="/js/main.js"></script>
+    	<script src="/js/dom.js"></script>
+    	<script src="/js/bread.js"></script>
+    	<script src="/js/cheese.js"></script>
+    	<script src="/js/condiments.js"></script>
+    	<script src="/js/meats.js"></script>
+    	<script src="/js/veggies.js"></script>
     </body>
 </html>
