@@ -27,6 +27,7 @@ main {
 }
 
 .checkboxcontainer {
+	font-size: 0.9em;
 	padding: 0 10px;
 	width: 100%;
 	display: flex;
