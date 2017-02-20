@@ -2,15 +2,11 @@
 
 var SandwichMaker = (function(oldSandwichMaker){
 
-
-
-	var button = document.getElementById("button");
-	var checkboxes = document.querySelectorAll("input.option"); //Grabs a nodeList of all checkboxes
-	var selectedAddons = [];
+	var checkboxes = document.querySelectorAll("input.option"); //Grabs a nodeList of all checkboxes;
 
 	for (let i = 0; i < checkboxes.length; i++) {
 		checkboxes[i].addEventListener("change", function(e) { //If there's a change
-			requestToppingPrice(e); //Adjust the price
+			requestToppingPrice(e); //Then ask for the price of the topping
 		});
 	};
 
@@ -34,7 +30,7 @@ var SandwichMaker = (function(oldSandwichMaker){
 			default:
 				console.log("error in requestToppingPrice");
 				break;
-			};
+		};
 	};
 
 	return oldSandwichMaker;
