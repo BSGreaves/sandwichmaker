@@ -15,7 +15,7 @@ var SandwichMaker = (function(oldSandwichMaker){
 		if (checked === true) { //"checked" is e.target.checked passed in from requestToppingPrice
 			SandwichMaker.adjustPrice("add", breadPrices[id]); //adjustPrice needs to know whether or not to add or subtract the topping price from the final price
 		}
-		if (checked === false) {
+		else {
 			SandwichMaker.adjustPrice("subtract", breadPrices[id]);
 		}
 	};

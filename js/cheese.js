@@ -15,7 +15,7 @@ var SandwichMaker = (function(oldSandwichMaker){
 		if (checked === true) {
 			SandwichMaker.adjustPrice("add", cheesePrices[id]);
 		}
-		if (checked === false) {
+		else {
 			SandwichMaker.adjustPrice("subtract", cheesePrices[id]);
 		}
 	};
