@@ -1,24 +1,23 @@
-var SandwichMaker = (function(oldSandwichMaker){
-	
-	var condimentPrices = {
-		mayo: .25,
-		mustard: .25,
-		hotSauce: .25,
-		ranch: .25
-	};
+var SandwichMaker = (function(oldSandwichMaker) {
 
-	oldSandwichMaker.getCondimentPrices = function() {
-		return condimentPrices;
-	}
+    var condimentPrices = {
+        mayo: .25,
+        mustard: .25,
+        hotSauce: .25,
+        ranch: .25
+    };
 
-	oldSandwichMaker.addCondiment = function(id, checked) {
-		if (checked === true) {
-			SandwichMaker.adjustPrice("add", condimentPrices[id]);
-		}
-		else {
-			SandwichMaker.adjustPrice("subtract", condimentPrices[id]);
-		}
-	};
+    oldSandwichMaker.getCondimentPrices = function() {
+        return condimentPrices;
+    }
 
-	return oldSandwichMaker;
+    oldSandwichMaker.addCondiment = function(id, checked) {
+        if (checked === true) {
+            SandwichMaker.adjustPrice("add", condimentPrices[id]);
+        } else {
+            SandwichMaker.adjustPrice("subtract", condimentPrices[id]);
+        }
+    };
+
+    return oldSandwichMaker;
 })(SandwichMaker || {});
